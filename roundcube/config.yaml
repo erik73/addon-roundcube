@@ -2,8 +2,7 @@
 name: Roundcube
 version: dev
 slug: roundcube
-description:
-  Roundcube webmail client
+description: Roundcube webmail client
 url: https://github.com/erik73/hassio-addons
 arch:
   - aarch64
@@ -23,4 +22,3 @@ options:
   domain_name: mydomain.no-ip.com
 schema:
   domain_name: str
-
