@@ -36,3 +36,4 @@ if ! bashio::var.has_value "${database}"; then
         --skip-ssl \
         -h "${host}" -P "${port}" \
             < /var/www/roundcube/SQL/mysql.initial.sql
+fi
