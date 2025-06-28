@@ -33,7 +33,7 @@ RUN apk add --no-cache \
     php84-ctype=8.4.8-r0 \
     && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/syslogd-overlay-noarch.tar.xz" \
         | tar -C / -Jxpf - \
-    && mkdir /var/www/rundcube \
+    && mkdir /var/www/roundcube \
     && curl -L -s "https://github.com/roundcube/roundcubemail/releases/download/${ROUNDCUBE_VERSION}/roundcubemail-${ROUNDCUBE_VERSION}-complete.tar.gz" \
         | tar zxvf - -C /var/www/roundcube --strip-components=1 \
     && rm -f -r \
