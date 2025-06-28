@@ -35,6 +35,11 @@ if ! bashio::var.has_value "${database}"; then
         -u "${username}" -p"${password}" \
         --skip-ssl \
         -h "${host}" -P "${port}" \
-            < /etc/roundcube/createdb.sql \
+            < /etc/roundcube/createdb.sql
+    bashio::log.info "Creating db tables for Roundcube"
+    mariadb \
+        -u "${username}" -p"${password}" \
+        --skip-ssl \
+        -h "${host}" -P "${port}" \
             < /var/www/roundcube/SQL/mysql.initial.sql
 fi
