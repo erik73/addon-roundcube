@@ -16,7 +16,7 @@ password=$(bashio::services "mysql" "password")
 port=$(bashio::services "mysql" "port")
 username=$(bashio::services "mysql" "username")
 
-Fix permissions
+# Fix permissions
 chown -R nginx:nginx /var/www/roundcube
 
 
