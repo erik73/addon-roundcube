@@ -14,7 +14,6 @@ host=$(bashio::services "mysql" "host")
 password=$(bashio::services "mysql" "password")
 port=$(bashio::services "mysql" "port")
 username=$(bashio::services "mysql" "username")
-config=foo
 
 # Modify config files
 sed -i "s#\['db_dsnw']\ =#['db_dsnw']\ = 'mysql://${username}:${password}@${host}/roundcubemail';#g" /var/www/roundcube/config/config.inc.php
