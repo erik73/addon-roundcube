@@ -10,7 +10,7 @@ $config['syslog_facility'] = LOG_MAIL;
 
 $config['smtp_log'] = false;
 
-$config['imap_host'] = 'localhost:143';
+$config['imap_host'] = '32b8266a-mailserver:143';
 
 $config['support_url'] = '';
 
