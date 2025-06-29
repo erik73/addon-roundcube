@@ -20,19 +20,19 @@ ARG BUILD_VERSION
 RUN apk add --no-cache \
     mariadb-client=11.4.5-r2 \
     nginx=1.28.0-r3 \ 
-    php84=8.4.8-r0 \
-    php84-fpm=8.4.8-r0 \
-    php84-pecl-imap=1.0.3-r0 \
-    php84-session=8.4.8-r0 \
-    php84-mysqli=8.4.8-r0 \
-    php84-opcache=8.4.8-r0 \
-    php84-mbstring=8.4.8-r0 \
-    php84-pdo_mysql=8.4.8-r0 \
-    php84-curl=8.4.8-r0 \
-    php84-xml=8.4.8-r0 \
-    php84-dom=8.4.8-r0 \
-    php84-intl=8.4.8-r0 \
-    php84-ctype=8.4.8-r0 \
+    php82=8.4.8-r0 \
+    php82-fpm=8.2.28-r1 \
+    php82-imap=8.2.28-r1 \
+    php82-session=8.2.28-r1 \
+    php82-mysqli=8.2.28-r1 \
+    php82-opcache=8.2.28-r1 \
+    php82-mbstring=8.2.28-r1 \
+    php82-pdo_mysql=8.2.28-r1 \
+    php82-curl=8.2.28-r1 \
+    php82-xml=8.2.28-r1 \
+    php82-dom=8.2.28-r1 \
+    php82-intl=8.2.28-r1 \
+    php82-ctype=8.2.28-r1 \
     && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/syslogd-overlay-noarch.tar.xz" \
         | tar -C / -Jxpf - \
     && mkdir /var/www/roundcube \
