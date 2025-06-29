@@ -4,7 +4,6 @@
 # Home Assistant Add-on: Mailserver
 # Configures mailserver
 # ==============================================================================
-# shellcheck disable=SC2154,SC2082
 export host
 export password
 export port
@@ -15,9 +14,10 @@ host=$(bashio::services "mysql" "host")
 password=$(bashio::services "mysql" "password")
 port=$(bashio::services "mysql" "port")
 username=$(bashio::services "mysql" "username")
+config=foo
 
 # Modify config files
-sed -i "s#$config\['db_dsnw']\ =#$/config\['db_dsnw']\ = 'mysql://${$username}:${$password}@${$host}/roundcubemail';#g" /var/www/roundcube/config/config.inc.php
+sed -i "s#$config\['db_dsnw']\ =#['db_dsnw']\ = 'mysql://${username}:${password}@${host}/roundcubemail';#g" /var/www/roundcube/config/config.inc.php
 
 # Modify config files for S6-logging
 sed -i 's#^ + .*$# + -^auth\\. -^authpriv\\. -mail\\. $T ${dir}/everything#' /etc/s6-overlay/s6-rc.d/syslogd-log/run
