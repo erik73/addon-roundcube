@@ -2,7 +2,7 @@
 
 /* Local configuration for Roundcube Webmail */
 
-$config['db_dsnw'] = 'mysql://adminuser:sqlpassword@sqlhost/database';
+$config['db_dsnw'] =
 
 $config['log_driver'] = 'syslog';
 
