@@ -25,6 +25,8 @@ RUN apk add --no-cache \
     php84-pecl-imap=1.0.3-r0 \
     php84-session=8.4.8-r0 \
     php84-mysqli=8.4.8-r0 \
+    php84-opcache=8.4.8-r0 \
+    php84-mbstring=8.4.8-r0 \
     php84-pdo_mysql=8.4.8-r0 \
     php84-curl=8.4.8-r0 \
     php84-xml=8.4.8-r0 \
