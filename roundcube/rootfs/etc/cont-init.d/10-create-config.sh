@@ -4,7 +4,7 @@
 # Home Assistant Add-on: Mailserver
 # Configures mailserver
 # ==============================================================================
-
+# shellcheck disable=SC2034
 export host
 export password
 export port
