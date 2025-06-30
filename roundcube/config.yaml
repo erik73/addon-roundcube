@@ -17,6 +17,10 @@ map:
   - ssl
 services:
   - mysql:need
+ports:
+  8099/tcp: 8099
+ports_description:
+  8099/tcp: Roundcube
 hassio_api: true
 options:
   domain_name: mydomain.no-ip.com
