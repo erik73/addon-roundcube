@@ -14,7 +14,7 @@ $config['imap_host'] = ['32b8266a-mailserver:143', 'ssl://hilton.zapto.org:993']
 
 $config['support_url'] = '';
 
-$config['auto_create_user'] = false;
+$config['auto_create_user'] = true;
 
 $config['des_key'] = 'MUU5FK7QJejl2Ng3Wg0z1pLd';
 
