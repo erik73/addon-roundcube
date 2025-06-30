@@ -20,7 +20,11 @@ $config['des_key'] = 'MUU5FK7QJejl2Ng3Wg0z1pLd';
 
 $config['plugins'] = ['archive', 'managesieve', 'zipdownload'];
 
-$config['managesieve_host'] = 'ssl://hilton.zapto.org:4190';
+$config['managesieve_host'] = 'hilton.zapto.org';
+
+$config['managesieve_auth_type'] = 'PLAIN';
+
+$config['managesieve_usetls'] = true;
 
 $config['managesieve_mbox_encoding'] = 'UTF-8';
 
@@ -37,3 +41,8 @@ $config['sql_debug'] = true;
 
 // Log IMAP conversation to <log_dir>/imap.log or to syslog
 $config['imap_debug'] = true;
+
+$config['managesieve_debug'] = true;
+
+$config['enable_installer'] = false;
+

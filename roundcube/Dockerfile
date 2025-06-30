@@ -33,6 +33,13 @@ RUN apk add --no-cache \
     php82-dom=8.2.28-r1 \
     php82-intl=8.2.28-r1 \
     php82-ctype=8.2.28-r1 \
+    php82-zip=8.2.28-r1 \
+    php82-gd=8.2.28-r1 \
+    php82-pecl-imagick=3.8.0-r0 \
+    php82-xmlwriter=8.2.28-r1 \
+    php82-fileinfo=8.2.28-r1 \
+    php82-exif=8.2.28-r1 \
+    php82-iconv=8.2.28-r1 \
     && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/syslogd-overlay-noarch.tar.xz" \
         | tar -C / -Jxpf - \
     && mkdir /var/www/roundcube \
