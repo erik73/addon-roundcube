@@ -20,7 +20,7 @@ $config['des_key'] = 'MUU5FK7QJejl2Ng3Wg0z1pLd';
 
 $config['plugins'] = ['archive', 'managesieve', 'zipdownload'];
 
-$config['managesieve_host'] = 'tls://hilton.zapto.org:993';
+$config['managesieve_host'] = 'tls://hilton.zapto.org:4190';
 
 $config['managesieve_mbox_encoding'] = 'UTF-8';
 
