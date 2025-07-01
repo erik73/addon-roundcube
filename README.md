@@ -1,26 +1,22 @@
-# Home Assistant Add-on: Mailserver
+# Home Assistant Add-on: Roundqube
 
 ![Project Stage][project-stage-shield]
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
 
 [![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-A Postfix/Dovecot mailserver for Home Assistant
-with Postfixadmin web interface...
+Roundcube webmail for the Mailserver add-on
 
 ## About
 
 Important: This addon requires that the MariaDB addon is installed and running!
 
-This addon is experimental, and provides a mailserver for your domain.
-It is also possible to configure additional email domains and accounts in the Postfixadmin
-web interface.
+This addon is experimental, and provides webmail interface for the mailserver add-on.
 
 ## Support
 
@@ -55,11 +51,10 @@ SOFTWARE.
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-mail.svg
-[commits]: https://github.com/erik73/addon-mail/commits/main
-[github-actions-shield]: https://github.com/erik73/addon-mail/workflows/CI/badge.svg
-[github-actions]: https://github.com/erik73/addon-mail/actions
-[issue]: https://github.com/erik73/addon-mail/issues
+[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-roundqube.svg
+[commits]: https://github.com/erik73/addon-roundcube/commits/main
+[github-actions-shield]: https://github.com/erik73/addon-roundcube/workflows/CI/badge.svg
+[github-actions]: https://github.com/erik73/addon-roundqube/actions
+[issue]: https://github.com/erik73/addon-roundcube/issues
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
