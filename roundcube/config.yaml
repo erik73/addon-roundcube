@@ -9,18 +9,24 @@ arch:
   - amd64
   - armv7
 init: false
-ingress: true
+webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 panel_icon: mdi:email
 map:
   - ssl
 services:
   - mysql:need
 ports:
-  8099/tcp: 8099
+  80/tcp: 2665
 ports_description:
-  8099/tcp: Roundcube
+  80/tcp: Roundcube
 hassio_api: true
 options:
   domain_name: mydomain.no-ip.com
+  ssl: false
+  certfile: fullchain.pem
+  keyfile: privkey.pem
 schema:
   domain_name: str
+  certfile: str
+  keyfile: str
+  ssl: bool
