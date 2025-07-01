@@ -10,7 +10,7 @@ $config['syslog_facility'] = LOG_MAIL;
 
 $config['smtp_log'] = false;
 
-$config['imap_host'] = ['32b8266a-mailserver:143', 'ssl://hilton.zapto.org:993'];
+$config['imap_host'] = '32b8266a-mailserver:143';
 
 $config['support_url'] = '';
 
@@ -20,7 +20,7 @@ $config['des_key'] = 'MUU5FK7QJejl2Ng3Wg0z1pLd';
 
 $config['plugins'] = ['archive', 'managesieve', 'zipdownload'];
 
-$config['managesieve_host'] = 'tls://hilton.zapto.org';
+$config['managesieve_host'] = '32b8266a-mailserver';
 
 $config['managesieve_auth_type'] = 'PLAIN';
 
