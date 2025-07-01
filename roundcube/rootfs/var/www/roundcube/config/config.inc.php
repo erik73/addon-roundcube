@@ -10,7 +10,7 @@ $config['syslog_facility'] = LOG_MAIL;
 
 $config['smtp_log'] = false;
 
-$config['imap_host'] = ['ssl://32b8266a-mailserver:993', 'ssl://hilton.zapto.org:993'];
+$config['imap_host'] = ['32b8266a-mailserver:143', 'ssl://hilton.zapto.org:993'];
 
 $config['support_url'] = '';
 
