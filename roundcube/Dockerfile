@@ -20,26 +20,26 @@ ARG BUILD_VERSION
 RUN apk add --no-cache \
     mariadb-client=11.4.5-r2 \
     nginx=1.28.0-r3 \ 
-    php82=8.2.28-r1 \
-    php82-fpm=8.2.28-r1 \
-    php82-imap=8.2.28-r1 \
-    php82-session=8.2.28-r1 \
-    php82-mysqli=8.2.28-r1 \
-    php82-opcache=8.2.28-r1 \
-    php82-mbstring=8.2.28-r1 \
-    php82-pdo_mysql=8.2.28-r1 \
-    php82-curl=8.2.28-r1 \
-    php82-xml=8.2.28-r1 \
-    php82-dom=8.2.28-r1 \
-    php82-intl=8.2.28-r1 \
-    php82-ctype=8.2.28-r1 \
-    php82-zip=8.2.28-r1 \
-    php82-gd=8.2.28-r1 \
-    php82-pecl-imagick=3.8.0-r0 \
-    php82-xmlwriter=8.2.28-r1 \
-    php82-fileinfo=8.2.28-r1 \
-    php82-exif=8.2.28-r1 \
-    php82-iconv=8.2.28-r1 \
+    php83=8.3.22-r0 \
+    php83-fpm=8.3.22-r0 \
+    php83-imap=8.3.22-r0 \
+    php83-session=8.3.22-r0 \
+    php83-mysqli=8.3.22-r0 \
+    php83-opcache=8.3.22-r0 \
+    php83-mbstring=8.3.22-r0 \
+    php83-pdo_mysql=8.3.22-r0 \
+    php83-curl=8.3.22-r0 \
+    php83-xml=8.3.22-r0 \
+    php83-dom=8.3.22-r0 \
+    php83-intl=8.3.22-r0 \
+    php83-ctype=8.3.22-r0 \
+    php83-zip=8.3.22-r0 \
+    php83-gd=8.3.22-r0 \
+    php83-pecl-imagick=3.8.0-r0 \
+    php83-xmlwriter=8.3.22-r0 \
+    php83-fileinfo=8.3.22-r0 \
+    php83-exif=8.3.22-r0 \
+    php83-iconv=8.3.22-r0 \
     && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/syslogd-overlay-noarch.tar.xz" \
         | tar -C / -Jxpf - \
     && mkdir /var/www/roundcube \
