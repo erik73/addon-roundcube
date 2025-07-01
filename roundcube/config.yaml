@@ -19,12 +19,12 @@ ports:
   80/tcp: 2665
 ports_description:
   80/tcp: Roundcube
-  ssl: false
-  certfile: fullchain.pem
-  keyfile: privkey.pem
 hassio_api: true
 options:
   domain_name: mydomain.no-ip.com
+  ssl: false
+  certfile: fullchain.pem
+  keyfile: privkey.pem
 schema:
   domain_name: str
   certfile: str
