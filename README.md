@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Roundqube
+# Home Assistant Add-on: Roundcube
 
 ![Project Stage][project-stage-shield]
 
@@ -54,7 +54,7 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-roundcube.svg
 [commits]: https://github.com/erik73/addon-roundcube/commits/main
 [github-actions-shield]: https://github.com/erik73/addon-roundcube/workflows/CI/badge.svg
-[github-actions]: https://github.com/erik73/addon-roundqube/actions
+[github-actions]: https://github.com/erik73/addon-roundcube/actions
 [issue]: https://github.com/erik73/addon-roundcube/issues
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
