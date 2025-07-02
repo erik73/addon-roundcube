@@ -30,11 +30,11 @@
       "customType": "regex",
       "managerFilePatterns": ["//Dockerfile$/"],
       "matchStrings": [
-        "ARG POSTFIXADMIN_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+        "ARG ROUNDCUBE_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "loose",
-      "depNameTemplate": "postfixadmin/postfixadmin"
+      "depNameTemplate": "roundcube/roundcubemail"
     },
     {
       "customType": "regex",
@@ -58,18 +58,6 @@
       "matchDatasources": ["repology"],
       "automerge": true,
       "matchDepNames": ["/alpine.*/php.*/"]
-    },
-    {
-      "groupName": "Postfix",
-      "matchDatasources": ["repology"],
-      "automerge": true,
-      "matchDepNames": ["/alpine.*/postfix.*/"]
-    },
-    {
-      "groupName": "Dovecot",
-      "matchDatasources": ["repology"],
-      "automerge": true,
-      "matchDepNames": ["/alpine.*/dovecot.*/"]
     },
     {
       "groupName": "Add-on base image",
