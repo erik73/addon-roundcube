@@ -1,8 +1,8 @@
 #!/command/with-contenv bashio
 # shellcheck disable=SC2086,SC2016
 # ==============================================================================
-# Home Assistant Add-on: Mailserver
-# Configures mailserver
+# Home Assistant Add-on: Roundcube
+# Configures Roundcube
 # ==============================================================================
 export host
 export password
@@ -29,6 +29,12 @@ sed -i 's#^s6-socklog .*$#s6-socklog -d3 -U -t3000 -x /run/systemd/journal/dev-l
 # Fix permissions
 chown -R nginx:nginx /var/www/roundcube
 
+if ! bashio::services.available 'mysql'; then
+    bashio::log.fatal \
+    "Local database access should be provided by the MariaDB addon"
+    bashio::exit.nok \
+    "Please ensure it is installed and started"
+fi
 
 database=$(\
     mariadb \

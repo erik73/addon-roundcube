@@ -17,7 +17,7 @@ The following ports are used by this addon:
 
 http or https: 2665
 
-Is is possible to change these in the Network section of the configuration.
+Is is possible to change this in the Network section of the configuration.
 
 If you are brave, you may want to expose Roundcube to the Internet by forwarding
 port 2665 in your router. Don´t even consider this unless you have enabled SSL!
@@ -52,8 +52,8 @@ MariaDB add-on.
 
 ### Option: `ssl`
 
-Enables/Disables SSL (HTTPS) on the web interface of Bookstack
-Panel. Set it `true` to enable it, `false` otherwise.
+Enables/Disables SSL (HTTPS) on the web interface of Roundcube
+Set it `true` to enable it, `false` otherwise.
 
 ### Option: `certfile`
 
