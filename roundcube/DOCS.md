@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Mailserver
+# Home Assistant Add-on: Roundcube
 
 Roundcube web based email client.
 
