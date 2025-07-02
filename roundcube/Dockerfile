@@ -45,9 +45,9 @@ RUN apk add --no-cache \
     && mkdir /var/www/roundcube \
     && curl -L -s "https://github.com/roundcube/roundcubemail/releases/download/${ROUNDCUBE_VERSION}/roundcubemail-${ROUNDCUBE_VERSION}-complete.tar.gz" \
         | tar zxvf - -C /var/www/roundcube --strip-components=1 \
-#        && cp /var/www/roundcube/config/config.inc.php.sample /var/www/roundcube/config/config.inc.php \
         && rm -f -r \
         /tmp/* \
+        /var/www/roundcube/installer \
     && mkdir -p /run/systemd/journal
 
 # Copy data for add-on
