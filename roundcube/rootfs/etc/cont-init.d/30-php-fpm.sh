@@ -16,6 +16,7 @@ bashio::var.json \
 
 # Generate direct access configuration, if enabled.
 if bashio::var.has_value "$(bashio::addon.port 80)"; then
+    bashio::config.require.ssl
     bashio::var.json \
         name "www" \
         port "^9001" \
