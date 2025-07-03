@@ -7,7 +7,6 @@ server {
     {{ end }}
 
     include /etc/nginx/includes/server_params.conf;
-    include /etc/nginx/includes/php.conf;
 
     {{ if .ssl }}
     include /etc/nginx/includes/ssl_params.conf;
