@@ -16,6 +16,18 @@ server {
     ssl_certificate_key /ssl/{{ .keyfile }};
     {{ end }}
 
+location ~ ^/(README.md|INSTALL|LICENSE|CHANGELOG|UPGRADING)$ {
+    deny all;
+}
+
+location ~ ^/(config|temp|logs)/ {
+    deny all;
+}
+
+location ~ ^/(bin|SQL)/ {
+    deny all;
+}
+
     location ~ .php$ {
         fastcgi_pass 127.0.0.1:9001;
         fastcgi_read_timeout 900;
