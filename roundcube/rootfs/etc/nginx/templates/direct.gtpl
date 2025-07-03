@@ -33,5 +33,6 @@ location ~ ^/(bin|SQL)/ {
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include /etc/nginx/includes/fastcgi_params.conf;
     }
 }
