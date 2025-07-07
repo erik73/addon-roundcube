@@ -8,8 +8,6 @@ $config['log_driver'] = 'syslog';
 
 $config['syslog_facility'] = LOG_MAIL;
 
-$config['smtp_log'] = false;
-
 // Disable cert verification of the mailserver since we only connect through a docker network
 $config['imap_host'] = 'tls://32b8266a-mailserver:143';
 $config['imap_conn_options'] = array (

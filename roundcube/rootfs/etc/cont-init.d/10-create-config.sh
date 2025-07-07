@@ -26,9 +26,6 @@ sed -i 's#^backtick .*$#backtick -D "n20 s1000000 T 1" line { printcontenv S6_LO
 sed -i 's#^s6-socklog .*$#s6-socklog -d3 -U -t3000 -x /run/systemd/journal/dev-log#' /etc/s6-overlay/s6-rc.d/syslogd/run
 sed -i 's#^s6-socklog .*$#s6-socklog -d3 -U -t3000 -x /run/systemd/journal/dev-log#' /run/service/syslogd/run.user
 
-# Fix permissions
-chown -R nginx:nginx /var/www/roundcube
-
 if ! bashio::services.available 'mysql'; then
     bashio::log.fatal \
     "Local database access should be provided by the MariaDB addon"
