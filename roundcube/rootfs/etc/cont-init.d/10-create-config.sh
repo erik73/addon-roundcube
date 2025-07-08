@@ -16,7 +16,7 @@ port=$(bashio::services "mysql" "port")
 username=$(bashio::services "mysql" "username")
 
 # Modify config files
-sed -i "s#\['db_dsnw']\ =#['db_dsnw']\ = 'mysql://${username}:${password}@${host}/roundcubemail';#g" /var/www/roundcube/config/config.inc.php
+sed -i "s#\['db_dsnw']\ =#['db_dsnw']\ = 'mysql://${username}:${password}@${host}:${port}/roundcubemail';#g" /var/www/roundcube/config/config.inc.php
 
 # Modify config files for S6-logging
 sed -i 's#^ + .*$# + -^auth\\. -^authpriv\\. -mail\\. $T ${dir}/everything#' /etc/s6-overlay/s6-rc.d/syslogd-log/run

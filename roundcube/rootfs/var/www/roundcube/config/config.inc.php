@@ -44,13 +44,23 @@ $config['auto_create_user'] = true;
 
 $config['des_key'] = 'MUU5FK7QJejl2Ng3Wg0z1pLd';
 
-$config['plugins'] = ['archive', 'managesieve', 'zipdownload'];
+$config['plugins'] = ['archive', 'managesieve', 'zipdownload', 'markasjunk'];
 
 $config['managesieve_auth_type'] = 'PLAIN';
 
 $config['managesieve_usetls'] = true;
 
 $config['managesieve_mbox_encoding'] = 'UTF-8';
+
+$config['managesieve_vacation'] = 1;
+
+$config['markasjunk_ham_mbox'] = null;
+
+$config['markasjunk_spam_mbox'] = null;
+
+$config['markasjunk_spam_flag'] = false;
+
+$config['markasjunk_ham_flag'] = false;
 
 $config['prefer_html'] = false;
 
