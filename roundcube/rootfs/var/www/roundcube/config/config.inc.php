@@ -70,3 +70,4 @@ $config['log_logins'] = true;
 
 $config['enable_installer'] = false;
 
+$config['request_path'] = $_SERVER['HTTP_X_INGRESS_PATH'] ?? null;
