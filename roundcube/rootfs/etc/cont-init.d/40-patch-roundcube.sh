@@ -6,5 +6,6 @@
 
 if [[ $(bashio::supervisor.version) < "2025.07.2" ]] || [[ "$(bashio::core.version)" < "2025.07.2" ]]; then
   bashio::log.info "Patching Roundcube to disable session cookie renewal"
+  # shellcheck disable=SC2016
   sed -i 's/$RCMAIL->session->regenerate_id(false);//' /var/www/roundcube/index.php
 fi
