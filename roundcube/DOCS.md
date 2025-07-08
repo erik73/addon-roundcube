@@ -16,9 +16,9 @@ for your mailbox.
 You reach the Roundcube interface by clicking the Web UI button in the add-on
 page to use ingress feature. Login with your IMAP credentials.
 If you want to reach the add-on directly you can specify a port in the optional
-ports section. Lets say you set the port 2665: 
+ports section. Lets say you set the port 2665:
 Point your browser to: http://{homeassistant IP}:2665.
-If you enable the SSL option it is https://{homeassistant IP}:2665. 
+If you enable the SSL option it is https://{homeassistant IP}:2665.
 It is also possible to use the hostname insted of IP address.
 If you want to forward your chosen port in your router, HTTPS is
 highly recommended!
