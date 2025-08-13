@@ -35,7 +35,7 @@ RUN apk add --no-cache \
     php83-ctype=8.3.24-r0 \
     php83-zip=8.3.24-r0 \
     php83-gd=8.3.24-r0 \
-    php83-pecl-imagick=3.8.0-r0 \
+    php83-pecl-imagick=3.8.0-r1 \
     php83-xmlwriter=8.3.24-r0 \
     php83-fileinfo=8.3.24-r0 \
     php83-exif=8.3.24-r0 \
