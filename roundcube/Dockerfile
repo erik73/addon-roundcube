@@ -44,7 +44,7 @@ RUN apk add --no-cache \
         | tar -C / -Jxpf - \
     && mkdir /var/www/roundcube \
     && curl -L -s "https://github.com/roundcube/roundcubemail/releases/download/${ROUNDCUBE_VERSION}/roundcubemail-${ROUNDCUBE_VERSION}-complete.tar.gz" \
-        | tar zxvf - -C /var/www/roundcube --strip-components=1 \
+        | tar -zxvf - -C /var/www/roundcube --strip-components=1 \
         && rm -f -r \
         /tmp/* \
         /var/www/roundcube/installer \
