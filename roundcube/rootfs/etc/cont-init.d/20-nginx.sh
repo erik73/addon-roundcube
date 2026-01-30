@@ -1,6 +1,6 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Roundcube
+# Home Assistant Community App: Roundcube
 # This file configures nginx
 # ==============================================================================
 
