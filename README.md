@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Roundcube
+# Home Assistant App: Roundcube
 
 ![Project Stage][project-stage-shield]
 
@@ -9,13 +9,13 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-Roundcube webmail for the Mailserver add-on
+Roundcube webmail for the Mailserver app
 
 ## About
 
 Important: This addon requires that the MariaDB addon is installed and running!
 
-This addon is experimental, and provides webmail interface for the mailserver add-on.
+This addon is experimental, and provides webmail interface for the mailserver app.
 
 ## Support
 
@@ -27,7 +27,7 @@ You could [open an issue here][issue] GitHub.
 
 MIT License
 
-Copyright (c) 2019-2025 Erik Hilton
+Copyright (c) 2019-2026 Erik Hilton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

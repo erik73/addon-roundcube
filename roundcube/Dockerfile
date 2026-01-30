@@ -50,7 +50,7 @@ RUN apk add --no-cache \
         /var/www/roundcube/installer \
     && mkdir -p /run/systemd/journal
 
-# Copy data for add-on
+# Copy data for app
 COPY rootfs /
 
 # Labels

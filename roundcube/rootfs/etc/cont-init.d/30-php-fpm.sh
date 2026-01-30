@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: Roundcube
+# Home Assistant Community App: Roundcube
 # Configures PHP-FPM for use with Roundcube
 # ==============================================================================
 
