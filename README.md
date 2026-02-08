@@ -13,9 +13,9 @@ Roundcube webmail for the Mailserver app
 
 ## About
 
-Important: This addon requires that the MariaDB addon is installed and running!
+Important: This app requires that the MariaDB app is installed and running!
 
-This addon is experimental, and provides webmail interface for the mailserver app.
+This app is experimental, and provides webmail interface for the mailserver app.
 
 ## Support
 
@@ -54,5 +54,5 @@ SOFTWARE.
 [github-actions-shield]: https://github.com/erik73/addon-roundcube/workflows/CI/badge.svg
 [github-actions]: https://github.com/erik73/addon-roundcube/actions
 [issue]: https://github.com/erik73/addon-roundcube/issues
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg

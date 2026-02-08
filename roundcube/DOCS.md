@@ -6,7 +6,7 @@ Roundcube web based email client.
 
 ## About
 
-Important: This addon requires that the MariaDB app is installed and running!
+Important: This app requires that the MariaDB app is installed and running!
 
 This app is experimental, and provides a webmail frontend that connects
 to the Mailserver app. It also enables you to configure Sieve scripts
