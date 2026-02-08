@@ -49,10 +49,10 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-roundcube.svg
-[commits]: https://github.com/erik73/addon-roundcube/commits/main
-[github-actions-shield]: https://github.com/erik73/addon-roundcube/workflows/CI/badge.svg
-[github-actions]: https://github.com/erik73/addon-roundcube/actions
-[issue]: https://github.com/erik73/addon-roundcube/issues
+[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/app-roundcube.svg
+[commits]: https://github.com/erik73/app-roundcube/commits/main
+[github-actions-shield]: https://github.com/erik73/app-roundcube/workflows/CI/badge.svg
+[github-actions]: https://github.com/erik73/app-roundcube/actions
+[issue]: https://github.com/erik73/app-roundcube/issues
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
