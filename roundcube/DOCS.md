@@ -70,5 +70,5 @@ You could [open an issue here][issue] GitHub.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[issue]: https://github.com/erik73/addon-roundcube/issues
+[issue]: https://github.com/erik73/app-roundcube/issues
 [repository]: https://github.com/erik73/hassio-addons
