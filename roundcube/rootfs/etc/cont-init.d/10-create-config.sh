@@ -28,7 +28,7 @@ sed -i 's#^s6-socklog .*$#s6-socklog -d3 -U -t3000 -x /run/systemd/journal/dev-l
 
 if ! bashio::services.available 'mysql'; then
     bashio::log.fatal \
-    "Local database access should be provided by the MariaDB addon"
+    "Local database access should be provided by the MariaDB app"
     bashio::exit.nok \
     "Please ensure it is installed and started"
 fi
