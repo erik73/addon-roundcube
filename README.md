@@ -15,7 +15,7 @@ Roundcube webmail for the Mailserver app
 
 Important: This app requires that the MariaDB app is installed and running!
 
-This app is experimental, and provides webmail interface for the mailserver app.
+This app is provides webmail interface for the mailserver app.
 
 ## Support
 
